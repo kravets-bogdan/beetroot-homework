@@ -1,2 +1,0 @@
-# beetroot-homework
-beetroot-homework
