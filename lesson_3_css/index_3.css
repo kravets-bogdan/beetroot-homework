@@ -1,0 +1,43 @@
+:root {
+  --white: #f1f4c6;
+  --grey: #837d7d;
+  --light-grey: #aaa6a4;
+  --font-size-base: 16px;
+}
+.app_3 {
+  background-color: var(--white);
+}
+.header {
+  font-size: var(--font-size-base);
+  text-align: justify;
+}
+.site-name_3 {
+  font-size: var(--font-size-base);
+  text-align: center;
+  border: 1px solid rgb(233, 236, 242);
+}
+.photo {
+  width: 200px;
+}
+a:link {
+  font-size: var(--font-size-base);
+}
+.work_experience {
+  font-size: var(--font-size-base);
+  text-align: justify;
+}
+.about_me {
+    text-align: justify;
+}
+.lists {
+  padding: 18px;
+}
+.color_grey {
+  background-color: var(--grey);
+}
+.color_white {
+  color: var(--white);
+}
+.backgroung_light_grey {
+  background-color: var(--light-grey);
+}
