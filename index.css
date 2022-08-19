@@ -23,6 +23,6 @@
   padding: 28px;
   color: var(--black);
 }
-.lists_homework {
+.homework-list {
   list-style-type: square;
 }

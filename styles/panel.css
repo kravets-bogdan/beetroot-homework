@@ -1,0 +1,9 @@
+:root{
+    --p-c-coral:coral;
+}
+.p-pannel-link{
+color: var(--p-c-coral);
+}
+.p-pannel-list{
+    list-style-type: none;
+}
