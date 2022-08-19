@@ -1,0 +1,51 @@
+.app {
+  font-family: "Open Sans";
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+/* *Header */
+  .header-navigation {
+    border-bottom: 1px solid black;
+    justify-content: center;
+    padding: 28px 0 28px 0;
+    display: flex;
+  }
+  .navigation-item {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  .navigation-link {
+    text-decoration: none;
+    color: var(--c-text);
+  }
+  .navigation-link:hover {
+    color: var(--c-black);
+  }
+.about-me-wrapper_5 {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+.about-me-title_5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  /* Black */
+  color: #070707;
+}
+.about-me-text_5 {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  /* Black */
+  color: #070707;
+}
