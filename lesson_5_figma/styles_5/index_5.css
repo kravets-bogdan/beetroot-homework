@@ -1,51 +1,72 @@
 .app {
-  font-family: "Open Sans";
+  font-family: var(--ff-family);
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 /* *Header */
-  .header-navigation {
-    border-bottom: 1px solid black;
-    justify-content: center;
-    padding: 28px 0 28px 0;
-    display: flex;
-  }
-  .navigation-item {
-    display: inline-block;
-    margin-right: 40px;
-  }
-  .navigation-link {
-    text-decoration: none;
-    color: var(--c-text);
-  }
-  .navigation-link:hover {
-    color: var(--c-black);
-  }
-.about-me-wrapper_5 {
-  width: 100%;
-  max-width: 970px;
-  margin: 0 auto;
+.header {
+  margin-top: 28px;
+  margin-bottom: 10px;
 }
-.about-me-title_5 {
-  font-style: normal;
+.header-navigation {
+  border-bottom: 1px solid var(--c-black);
+  padding-bottom: 28px;
+}
+/* Navigation */
+.navigation-list {
+  list-style-type: none;
+  text-align: center;
+}
+.navigation-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation-link {
+  text-decoration: none;
+  color: var(--c-text);
+}
+#home {
+  color: var(--c-black);
+}
+/* Main */
+.main-firstscreen_title {
+  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 34px;
-  line-height: 46px;
+  font-size: 48px;
+  line-height: 65px;
+  /* Black */
+  color: var(--c-black);
+}
+/* About */
+.about-me {
+  background-color: var(--c-bg-gray);
+  padding: 100px;
+}
+
+.about-me-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 44px;
   text-align: center;
   /* Black */
-  color: #070707;
+  color: var(--c-black);
 }
-.about-me-text_5 {
-
-  font-style: normal;
+.about-me-text-wrapper {
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 24px;
   text-align: center;
   /* Black */
-  color: #070707;
+  color: var(--c-black);
+}
+.about-me-text {
+  padding-bottom: 30px;
+}
+.about-me-text:last-child {
+  margin-bottom: 0px;
 }

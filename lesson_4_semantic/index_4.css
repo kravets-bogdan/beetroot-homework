@@ -3,7 +3,7 @@ body {
   font-size: var(--f-base4);
   color: var(--c-warning4);
 }
-a {
+.navigation-link_4 {
   color: var(--c-white4);
   font-size: var(--f-base4);
   display: flex;
@@ -63,6 +63,8 @@ a:hover {
   padding: 10px;
 }
 .footer-link_4 {
+  color: var(--c-white4);
+  font-size: var(--f-base4);
   display: block;
   text-align: center;
 }

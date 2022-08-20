@@ -1,9 +1,18 @@
-:root{
-    --p-c-coral:coral;
+:root {
+  --p-c-emerald: #50c878;
+  --p-bg-grey: #f5f5dc;
+  --f-size: 18px;
 }
-.p-pannel-link{
-color: var(--p-c-coral);
+.p-pannel {
+  font-size: var(--f-size);
 }
-.p-pannel-list{
-    list-style-type: none;
+.p-pannel-wrapper {
+  background-color: var(--p-bg-grey);
+}
+.p-pannel-link {
+  text-decoration: none;
+  color: var(--p-c-emerald);
+}
+.p-pannel-list {
+  list-style-type: none;
 }
