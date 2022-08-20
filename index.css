@@ -26,3 +26,10 @@
 .homework-list {
   list-style-type: square;
 }
+.homework-link {
+  text-decoration: none;
+  color: var(--black);
+}
+.homework-link:hover{
+  color:rgb(0, 115, 255);
+}

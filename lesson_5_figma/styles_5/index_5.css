@@ -36,7 +36,7 @@ img {
 .main-firstscreen_title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 48px;
+  font-size: var( --f-title);
   line-height: 65px;
   /* Black */
   color: var(--c-black);
@@ -50,7 +50,7 @@ img {
 .about-me-title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 38px;
+  font-size: var(--f-subtitle);
   line-height: 44px;
   text-align: center;
   /* Black */
@@ -58,7 +58,7 @@ img {
 }
 .about-me-text-wrapper {
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--f-base);
   line-height: 24px;
   text-align: center;
   /* Black */
