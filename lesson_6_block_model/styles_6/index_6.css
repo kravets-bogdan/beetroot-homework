@@ -1,0 +1,131 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #3399cc;
+  border: 25px solid #2b81ac;
+  padding: 50px;
+}
+ul {
+  list-style-type: none;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.weather {
+  width: 100%;
+}
+.title {
+  margin-bottom: 40px;
+}
+.title-text {
+  display: inline-block;
+  font-family: "Lucida Sans Unicode";
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--c-white);
+}
+.title-icon {
+  display: inline-block;
+  margin-left: 4px;
+}
+.first-icon {
+  color: var(--c-white);
+}
+.weather-block {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 0px;
+  border: 1px solid var(--c-white);
+  margin-bottom: 40px;
+}
+.weather-item {
+  display: inline-block;
+  border: 1px solid var(--c-white);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  color: var(--c-white);
+}
+.box-icon-wrapper {
+  font-family: "Lucida Sans Unicode";
+  color: var(--c-box-icon-white-70);
+}
+.wi {
+  color: var(--c-box-icon-white-70);
+}
+.box-small {
+  width: 25%;
+}
+.box-mid {
+  width: 50%;
+}
+.box-big {
+  width: 100%;
+}
+.text-inside-box {
+  display: inline-block;
+}
+.text {
+  font-family: "Lucida Sans Unicode";
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--c-white);
+}
+
+.icon {
+  width: 47px;
+  
+  font-family: "Weather Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 61px;
+}
+/* backgound box */
+.box-blue {
+  background-color: var(--c-box-blue);
+}
+.box-light-blue {
+  background-color: var(--c-box-light-blue);
+}
+.box-lilac {
+  background-color: var(--c-box-lilac);
+}
+.box-red {
+  background-color: var(--c-box-red);
+}
+.box-orange {
+  background-color: var(--c-box-orange);
+}
+.box-yellow {
+  background-color: var(--c-box-yellow);
+}
+.box-light-green {
+  background-color: var(--c-box-light-green);
+}
+.box-cyan {
+  background-color: var(--c-box-cyan);
+}
+.box-purpure {
+  background-color: var(--c-box-purpure);
+}
+.box-green {
+  background-color: var(--c-box-green);
+}
+.box-dark-blue {
+  background-color: var(--c-box-dark-blue);
+}
+/* Hover */
+ul:hover li {
+  transition: all 0.33s ease;
+  opacity: 0.5;
+}
+
+ul:hover li:hover {
+  transition: all 0, 33s ease;
+  opacity: 1;
+}

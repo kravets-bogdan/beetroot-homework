@@ -14,38 +14,159 @@
     <!-- Panels -->
     <link rel="stylesheet" href="../styles/panel.css" />
     <!-- Local Stlyes-->
-    <link rel="stylesheet" href="./index_6.html" />
+    <link rel="stylesheet" href="./styles_6/index_6.css" />
+    <link rel="stylesheet" href="./styles_6/variables_6.css" />
+    <!-- Weather Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css"
+    />
     <title>Block Model</title>
   </head>
   <body>
     <!-- Panel -->
     <div class="p-pannel">
-        <div class="p-pannel-wrapper">
-          <nav class="p-pannel-nav">
-            <ul class="p-pannel-list">
-              <li class="p-pannel-item">
-                <a href="../index.html" id="up" class="p-pannel-link"
-                  >Головна сторінка</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="p-pannel-wrapper">
+        <nav class="p-pannel-nav">
+          <ul class="p-pannel-list">
+            <li class="p-pannel-item">
+              <a href="../index.html" id="up" class="p-pannel-link"
+                >Головна сторінка</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!-- App-->
+    </div>
+    <!-- App-->
     <div class="app">
+      <div class="wrapper">
         <!-- Header -->
         <header>
           <!-- -->
         </header>
         <!-- Main -->
         <main>
-          <!-- Main -->
+          <section class="weather">
+            <div class="title">
+              <div class="title-wrapper">
+                <h1 class="title-text">CSS Weather Forecast</h1>
+                <div class="title-icon">
+                  <i class="wi wi-sunrise first-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="weather-block">
+              <!-- Line 1 -->
+              <div class="weather-wrapper">
+                <ul class="weather-list">
+                  <li class="weather-item box-mid box-blue item-1">
+                    <div class="text-box">Lisabon</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">21</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-day-sunny icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-small box-light-blue item-1">
+                    <div class="text-box">Paris</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">11</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-night-hail icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-small box-lilac item-1">
+                    <div class="text-box">Belgrad</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">15</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-day-cloudy icon"></i>
+                    </div>
+                  </li>
+                  <!-- Line 2 -->
+                  <li class="weather-item box-small box-red item-1">
+                    <div class="text-box">Venice</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">21</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-day-cloudy-high icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-small box-orange item-1">
+                    <div class="text-box">Tel-Avive</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">32</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-hot icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-small box-yellow item-1">
+                    <div class="text-box">Cair</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">21</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-day-sunny icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-small box-light-green item-1">
+                    <div class="text-box">New-York</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">17</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-day-sleet-storm icon"></i>
+                    </div>
+                  </li>
+                  <!-- Line 3 -->
+                  <li class="weather-item box-small box-cyan item-1">
+                    <div class="text-box">New-Delhi</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">17</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-rain-wind icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-mid box-purpure item-1">
+                    <div class="text-box">San-Francisco</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">15</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-day-sunny-overcast icon"></i>
+                    </div>
+                  </li>
+                  <li class="weather-item box-small box-green item-1">
+                    <div class="text-box">Tokyo</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">8</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-night-clear icon"></i>
+                    </div>
+                  </li>
+                  <!-- Line 4  -->
+                  <li class="weather-item box-big box-dark-blue item-1">
+                    <div class="text-box">Sydney</div>
+                    <div class="box-icon-wrapper">
+                      <p class="text-inside-box">23</p>
+                      <i class="wi wi-celsius first-icon"></i>
+                      <i class="wi wi-night-partly-cloudy icon"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                Have a nice day and don't forget umbrella if you are in New
+                Delhi now!
+              </p>
+            </div>
+          </section>
         </main>
         <!-- Footer-->
         <footer>
           <!-- -->
         </footer>
+      </div>
     </div>
   </body>
 </html>

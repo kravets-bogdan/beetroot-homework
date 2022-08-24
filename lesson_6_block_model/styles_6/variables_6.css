@@ -1,0 +1,15 @@
+:root{
+    --c-white: #ffffff;
+    --c-box-blue: #70b9dc;
+    --c-box-light-blue: #33CCCC;
+    --c-box-lilac: #996699;
+    --c-box-red: #C24747;
+    --c-box-orange: #E2674A;
+    --c-box-yellow:#FFCC66;
+    --c-box-light-green: #99CC99;
+    --c-box-cyan: #669999;
+    --c-box-purpure: #CC6699;
+    --c-box-green: #339966;
+    --c-box-dark-blue: #666699;
+    --c-box-icon-white-70: rgba(255, 255, 255, 0.7);
+}
