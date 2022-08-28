@@ -20,6 +20,8 @@ img {
 .navigation-list {
   list-style-type: none;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .navigation-item {
   display: inline-block;

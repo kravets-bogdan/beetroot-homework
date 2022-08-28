@@ -39,6 +39,10 @@ ul {
   border: 1px solid var(--c-white);
   margin-bottom: 40px;
 }
+.weather-list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .weather-item {
   display: inline-block;
   border: 1px solid var(--c-white);
@@ -55,6 +59,8 @@ ul {
 }
 .wi {
   color: var(--c-box-icon-white-70);
+  width: 48px;
+  height: 61px;
 }
 .box-small {
   width: 25%;
@@ -78,7 +84,7 @@ ul {
 
 .icon {
   width: 47px;
-  
+
   font-family: "Weather Icons";
   font-style: normal;
   font-weight: 400;
