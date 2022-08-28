@@ -1,0 +1,19 @@
+:root {
+  /* Colors */
+  --c-orange: #ff9900;
+  --c-white: #ffffff;
+  --c-black: #2f281e;
+  --c-light-blue: #bcd0e5;
+  --c-grey: #544837;
+  /* font size */
+  --f-sz-normal: 16px;
+  --f-sz-logo: 30px;
+  --f-sz-title: 20px;
+  --f-sz-header: 36px;
+  /* font family */
+  --ff-montserrat: "Montserrat";
+  --ff-gotham: "Gotham";
+  --ff-poppins: "Poppins";
+  /* transition */
+  --t-normal: 0.35s;
+}

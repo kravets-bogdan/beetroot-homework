@@ -1,22 +1,3 @@
-:root {
-  /* Colors */
-  --c-orange: #ff9900;
-  --c-white: #ffffff;
-  --c-black: #2f281e;
-  --c-light-blue: #bcd0e5;
-  --c-grey: #544837;
-  /* font size */
-  --f-sz-normal: 16px;
-  --f-sz-logo: 30px;
-  --f-sz-title: 20px;
-  --f-sz-header: 36px;
-  /* font family */
-  --ff-montserrat: "Montserrat";
-  --ff-gotham: "Gotham";
-  --ff-poppins: "Poppins";
-  /* transition */
-  --t-normal: 0.35s;
-}
 .app {
   width: 100%;
   max-width: 1230px;
@@ -25,19 +6,17 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 0px;
-  border-top: 1px solid #BCD0E57F;
-  
-}
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
   color: var(--c-black);
+  transition: var(--t-normal);
+}
+a:hover {
+  transition: var(--t-normal);
+  color: var(--c-orange);
 }
 .button {
   border: 1px solid var(--c-light-blue);
@@ -56,20 +35,20 @@ a {
 }
 
 /* main */
-.features{
+.features {
   margin-bottom: 50px;
 }
 .features-wrapper {
-  background-image: url(./assets_7/img/bg.png);
+  background-image: url(../assets_7/img/bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
   padding-top: 100px;
   padding-bottom: 50px;
 }
 .features-title-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .features-text {
   font-family: var(--ff-montserrat);
@@ -83,33 +62,40 @@ a {
   justify-content: space-between;
   flex-direction: row;
 }
-.icon{
-    margin-bottom: 30px;
+.icon {
+  margin-bottom: 30px;
 }
-.card-title{
-    margin-bottom: 15px;
-    font-family: var(--ff-montserrat);
-    font-weight: 600;
-    font-size: var(--f-sz-title);
-    line-height: 27px;
-    color:var(--c-black);
+.card-title {
+  margin-bottom: 15px;
+  font-family: var(--ff-montserrat);
+  font-weight: 600;
+  font-size: var(--f-sz-title);
+  line-height: 27px;
+  color: var(--c-black);
 }
-.card-text{
-font-family: var(--ff-montserrat);
-font-weight: 500;
-font-size: var(--f-sz-normal);
-line-height: 26px;
-color: var(--c-grey);
+.card-text {
+  font-family: var(--ff-montserrat);
+  font-weight: 500;
+  font-size: var(--f-sz-normal);
+  line-height: 26px;
+  color: var(--c-grey);
 }
-.card-wrapper{
-    margin-bottom: 70px;
+.card-wrapper {
+  margin-bottom: 70px;
 }
-.features-button-wrapper{
-    display: flex;
-    justify-content: center;
+.features-button-wrapper {
+  display: flex;
+  justify-content: center;
 }
 /* *Footer */
 /* Logo */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  border-top: 1px solid #bcd0e57f;
+  flex-wrap: wrap;
+}
 .logo-wrapper {
   display: flex;
   transition: var(--t-normal);
