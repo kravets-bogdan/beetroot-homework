@@ -1,0 +1,15 @@
+:root {
+  --c-bg: #3b3f45;
+  --c-pink: #ff8984;
+  --c-white: #ffffff;
+  --c-bg-wrapper: #4a4f56;
+  --c-roman-silver: #88839e;
+  --c-rhytm: #7a7593;
+  /* font */
+  --f-base: 18px;
+  --f-small: 10px;
+  --f-header: 24px;
+  --f-header-text: 16px;
+  /* font family */
+  --ff-roboto: "Roboto", sans-serif;
+}

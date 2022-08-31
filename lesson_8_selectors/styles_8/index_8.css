@@ -1,0 +1,106 @@
+.app {
+  background: var(--c-bg);
+  min-height: 100vh;
+  font-family: var(--ff-roboto);
+}
+.wrapper {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ul {
+  list-style: none;
+}
+/* header */
+.header-wrapper {
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--c-bg-wrapper);
+}
+.header-title {
+  font-weight: 700;
+  font-size: var(--f-header);
+  line-height: 28px;
+  color: var(--c-pink);
+}
+.header-text {
+  font-weight: 400;
+  font-size: var(--f-header-text);
+  line-height: 20px;
+  color: var(--c-pink);
+}
+/* Shopping List */
+li:nth-child(even) {
+  background: var(--c-rhytm);
+}
+.shopping-list-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.shopping-list {
+  width: 100%;
+}
+.shopping-list-item {
+  background: var(--c-roman-silver);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.35s ease-in;
+}
+.shopping-list-item:hover {
+  transition: all 0.35s ease-in;
+  border-top: 3px solid var(--c-white);
+  border-bottom: 3px solid var(--c-white);
+}
+.shopping-list-item:active {
+  background-color: var(--c-pink);
+  transition: all 0.1s ease-in;
+}
+/* Label */
+.label-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.label-text {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: var(--f-base);
+  line-height: 20px;
+  color: var(--c-white);
+}
+.label-subtext {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: var(--f-small);
+  line-height: 20px;
+  color: var(--c-white);
+}
+.label-subtext::after {
+  content: ")";
+}
+.label-subtext::before {
+  content: "(";
+}
+/* Footer */
+.footer-wrapper {
+  background: var(--c-bg-wrapper);
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: var(--f-base);
+  line-height: 20px;
+  color: var(--c-pink);
+  padding: 10px 0px;
+}
+input:checked ~ div {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
