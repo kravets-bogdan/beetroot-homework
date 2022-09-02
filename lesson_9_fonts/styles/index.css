@@ -1,0 +1,119 @@
+.app{
+    margin-top: 15px;
+    margin-bottom: 90px;
+}
+.wrapper {
+  width: 1220px;
+  max-width: 100%;
+  background-color: var(--c-white);
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--c-black);
+}
+ul {
+  list-style-type: none;
+}
+/* Header */
+.header {
+  margin-bottom: 70px;
+}
+.header-warapper {
+  display: flex;
+  justify-content: space-between;
+}
+.first-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.change-lang {
+  margin-right: 50px;
+  align-items: center;
+}
+.change-lang-text {
+  font-family: var(--ff-tourney);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+.navagation-list {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-item {
+  font-family: var(--ff-staatliches);
+  font-weight: 400;
+  font-size: var(--fs-small);
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--c-black);
+  margin-left: 10px;
+}
+.navigation-item:last-child {
+  margin-left: 0px;
+}
+/* Main */
+.chapter {
+  margin-bottom: 70px;
+}
+.chapter:last-child {
+  margin-bottom: 0px;
+}
+.title {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+.section-text-title {
+    font-family: var(--ff-francois-one);
+    font-weight: 400;
+    font-size: var(--fs-big);
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--c-black);
+    margin-right: 10px;
+}
+.section-subtext-title {
+  font-family: var(--ff-farro);
+  font-weight: 300;
+  font-size: var(--fs-small);
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: var(--c-black);
+}
+.section-text {
+  font-family: var(--ff-pt-sans);
+  font-weight: 400;
+  font-size: var(--fs-medium);
+  line-height: 48px;
+  color: var(--c-black);
+}
+.text-decoration {
+  text-decoration-line: underline;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-bolt {
+  font-weight: 800px;
+}
+.text-bg-grey {
+  background-color: var(--c-grey);
+}
+.bracket::before {
+  content: "<";
+}
+.bracket::after {
+  content: ">";
+}
+p {
+  padding-bottom: 40px;
+}
+p:last-child {
+  padding-bottom: 0;
+}
