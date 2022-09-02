@@ -55,10 +55,10 @@ img {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--c-black);
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .navigation-item:last-child {
-  margin-left: 0px;
+  margin-right: 0px;
 }
 /* Main */
 .chapter {
