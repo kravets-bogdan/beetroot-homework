@@ -96,6 +96,10 @@ img {
   font-size: var(--fs-medium);
   line-height: 48px;
   color: var(--c-black);
+  padding-bottom: 40px;
+}
+.section-text:last-child{
+  padding-bottom: 0px;
 }
 /* Text View */
 .text-decoration {
@@ -115,10 +119,4 @@ img {
 }
 .bracket::after {
   content: ">";
-}
-p {
-  padding-bottom: 40px;
-}
-p:last-child {
-  padding-bottom: 0;
 }
