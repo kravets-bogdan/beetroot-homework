@@ -16,7 +16,7 @@ a {
 ul {
   list-style-type: none;
 }
-img{
+img {
   width: 100%;
 }
 /* Header */
@@ -105,7 +105,7 @@ img{
   font-style: italic;
 }
 .text-bolt {
-  font-weight: 800px;
+  font-weight: 800;
 }
 .text-bg-grey {
   background-color: var(--c-grey);
