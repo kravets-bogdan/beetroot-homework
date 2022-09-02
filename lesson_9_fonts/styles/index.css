@@ -16,6 +16,9 @@ a {
 ul {
   list-style-type: none;
 }
+img{
+  width: 100%;
+}
 /* Header */
 .header {
   margin-bottom: 70px;
@@ -40,6 +43,7 @@ ul {
   line-height: 18px;
   letter-spacing: 0.04em;
 }
+/* Navigation */
 .navagation-list {
   display: flex;
   justify-content: space-between;
@@ -93,6 +97,7 @@ ul {
   line-height: 48px;
   color: var(--c-black);
 }
+/* Text View */
 .text-decoration {
   text-decoration-line: underline;
 }
