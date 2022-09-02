@@ -1,0 +1,121 @@
+.wrapper {
+  background-color: var(--c-bg);
+  min-height: 100vh;
+  padding: 50px;
+}
+.blocks {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 100%;
+  height: 600px;
+  position: relative;
+}
+.rotate-circle {
+  width: 100%;
+  height: 100%;
+  transition: transform var(--t-normal);
+}
+/* Line */
+.line {
+  height: 6px;
+  width: calc(100% - 160px);
+  background-color: var(--c-grey);
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 80px;
+}
+.line--45 {
+  transform: rotate(45deg);
+}
+.line--90 {
+  transform: rotate(90deg);
+}
+.line--135 {
+  transform: rotate(-45deg);
+}
+/* Circle */
+.circle-main {
+  z-index: 10;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-color: var(--c-yellow);
+  position: absolute;
+  top: calc(50% - 130px);
+  left: calc(50% - 130px);
+}
+.circle-main:hover ~ .rotate-circle {
+  transform: rotate(720deg);
+}
+.circle {
+  transition: transform var(--t-normal);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--c-red);
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50px);
+}
+
+.circle:hover {
+  transform: translateY(50px);
+}
+.circle--big {
+  width: 160px;
+  height: 160px;
+}
+.circle--right {
+  top: calc(50% - 50px);
+  left: auto;
+  right: 0px;
+}
+.circle--right:hover {
+  transform: translate(-50px);
+}
+.circle--bottom {
+  top: auto;
+  bottom: 0px;
+}
+.circle--bottom:hover {
+  transform: translateY(-50px);
+}
+.circle--left {
+  top: calc(50% - 50px);
+  left: 0px;
+}
+.circle--left:hover {
+  transform: translate(50px);
+}
+.circle--top-right {
+  left: auto;
+  right: 20px;
+  top: 20px;
+}
+.circle--top-right:hover {
+  transform: translate(-50px, 50px);
+}
+.circle--bottom-right {
+  top: auto;
+  bottom: 20px;
+  left: auto;
+  right: 20px;
+}
+.circle--bottom-right:hover {
+  transform: translate(-50px, -50px);
+}
+.circle--bottom-left {
+  left: 20px;
+  top: auto;
+  bottom: 20px;
+}
+.circle--bottom-left:hover {
+  transform: translate(50px, -50px);
+}
+.circle--top-left {
+  top: 20px;
+  left: 20px;
+}
+.circle--top-left:hover {
+  transform: translate(50px, 50px);
+}

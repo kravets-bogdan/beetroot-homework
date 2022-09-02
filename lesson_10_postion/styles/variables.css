@@ -1,0 +1,9 @@
+:root {
+  /* Color */
+  --c-bg: #414453;
+  --c-red: #ff545b;
+  --c-yellow: #ffcf6d;
+  --c-grey: #808391;
+  /* Transition */
+  --t-normal: 2s;
+}
