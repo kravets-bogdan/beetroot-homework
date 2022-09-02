@@ -1,6 +1,6 @@
-.app{
-    margin-top: 15px;
-    margin-bottom: 90px;
+.app {
+  margin-top: 15px;
+  margin-bottom: 90px;
 }
 .wrapper {
   width: 1220px;
@@ -69,14 +69,14 @@ ul {
   justify-content: flex-start;
 }
 .section-text-title {
-    font-family: var(--ff-francois-one);
-    font-weight: 400;
-    font-size: var(--fs-big);
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--c-black);
-    margin-right: 10px;
+  font-family: var(--ff-francois-one);
+  font-weight: 400;
+  font-size: var(--fs-big);
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-black);
+  margin-right: 10px;
 }
 .section-subtext-title {
   font-family: var(--ff-farro);
