@@ -1,0 +1,18 @@
+:root {
+  /* Color */
+  --c-bg: #f6f6f6;
+  --c-white: #ffffff;
+  --c-black: #3c3c3c;
+  --c-text: #282528;
+  --c-image-text: #646464;
+  --c-hover: #18b5dc;
+  --c-light-blue: #5dcbe6;
+  --c-transparent: trasparent;
+  /* Font size */
+  --fs-logo: 30px;
+  --fs-small: 18px;
+  --fs-title: 34px;
+  /* Font familly */
+  --ff-lato: "Lato", sans-serif;
+  --ff-train-one: "Train One", cursive;
+}

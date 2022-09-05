@@ -1,0 +1,219 @@
+.app {
+  background-color: var(--c-bg);
+  min-height: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+/* Header */
+.header {
+  background-color: var(--c-white);
+}
+.wrapper {
+  padding: 0px 20px;
+  margin: 0 auto;
+  width: 1240px;
+  max-width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*  logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__text {
+  font-family: var(--ff-train-one);
+  font-weight: 400;
+  font-size: var(--fs-logo);
+  line-height: 43px;
+  text-transform: uppercase;
+  color: var(--c-black);
+}
+/* header navigation */
+.header__navigation{
+  padding: 0px 20px;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navigation__item {
+  margin-right: 30px;
+}
+.navigation__item:last-child {
+  margin-right: 0px;
+}
+.navigation__link {
+  font-family: var(--ff-lato);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--c-black);
+}
+.navigation__link:hover {
+  color: var(--c-hover);
+}
+/*  button */
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: var(--c-white);
+  border: 1px solid var(--c-black);
+  font-family: var(--ff-lato);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--c-black);
+}
+.button:hover {
+  opacity: 0.5;
+}
+/* Main */
+.banner__wrapper {
+  padding: 150px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner__title {
+  font-family: var(--ff-lato);
+  font-weight: 700;
+  font-size: var(--fs-title);
+  line-height: 41px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--c-black);
+  margin-bottom: 20px;
+}
+.banner__line {
+  height: 6px;
+  width: 50px;
+  background: #dddbdb;
+  margin-bottom: 40px;
+}
+.banner__text {
+  font-family: var(--ff-lato);
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--fs-small);
+  line-height: 24px;
+
+  color: #3c3c3c;
+  margin-bottom: 60px;
+}
+/* Team block */
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.banner__image-card {
+  margin-right: 30px;
+}
+.banner__image-card:last-child {
+  margin-right: 0px;
+}
+.banner__image-wrapper {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 20px; 
+}
+.banner__image-title {
+  font-family: var(--ff-lato);
+  font-weight: 700;
+  font-size: var(--fs-small);
+  line-height: 22px;
+  color: var(--c-text);
+}
+.banner__image-text {
+  font-family: var(--ff-lato);
+  font-weight: 300;
+  font-size: var(--fs-small);
+  line-height: 22px;
+  color: var(--c-image-text);
+}
+/* hover */
+.banner__image-card {
+  position: relative;
+}
+.banner__social-block {
+  width: 270px;
+  height: 270px;
+  opacity: 0;
+  background-color: var(--c-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__image-card:hover .banner__social-block {
+  opacity: 1;
+}
+/* footer */
+.footer {
+  background-color: var(--c-white);
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+}
+/* logo */
+.footer__logo {
+  margin-bottom: 28px;
+}
+.footer__navigation {
+  margin-bottom: 30px;
+}
+/* Social block */
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social__item {
+  margin-right: 5px;
+}
+.social__item:last-child {
+  margin-right: 0px;
+}
+.social__icon {
+  border: 1px solid var(--c-light-blue);
+  margin: 2px;
+  color: var(--c-white);
+  background-color: var(--c-light-blue);
+  padding: 10px;
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
+}
+.social__icon:hover {
+  background-color: var(--c-white);
+  color: var(--c-hover);
+}
+.icon--footer {
+  background-color: var(--c-transparent);
+  color: var(--c-hover);
+}
+.icon--footer:hover {
+  background-color: var(--c-hover);
+  color: var(--c-white);
+}
