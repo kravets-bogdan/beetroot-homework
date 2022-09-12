@@ -1,5 +1,7 @@
 .app {
   font-family: var(--ff-family);
+}
+.wrapper {
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
@@ -12,19 +14,20 @@ img {
   margin-top: 28px;
   margin-bottom: 10px;
 }
-.header-navigation {
+.header-wrapper {
   border-bottom: 1px solid var(--c-black);
+}
+.header-navigation {
   padding-bottom: 28px;
 }
 /* Navigation */
 .navigation-list {
   list-style-type: none;
-  text-align: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 .navigation-item {
-  display: inline-block;
   margin-right: 20px;
 }
 .navigation-link {
@@ -38,10 +41,11 @@ img {
 .main-firstscreen_title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: var( --f-title);
+  font-size: var(--f-title);
   line-height: 65px;
   /* Black */
   color: var(--c-black);
+  text-align: center;
 }
 /* About */
 .about-me {

@@ -1,0 +1,32 @@
+mixin banner()
+  section.banner  
+    .banner__wrapper.wrapper
+      //- left side
+      .banner__left-side 
+        .banner__content 
+          img(src="./assets/img/photo.png" alt="photo Sahariar Kabir").banner__photo
+          //- Square
+          .banner__square.banner__square--left-top
+          .banner__square.banner__square--left-bottom
+          .banner__square.banner__square--right-top
+          .banner__square.banner__square--right-bottom
+      //- Right Side
+      .banner__right-side
+        h2.banner__title Sahariar Kabir
+        //- Line
+        .banner__line 
+        .banner__subtitle 
+          span Frontend Developer
+        //- Social Networks
+        .banner__social-block 
+          +social()
+        p.banner__text  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacusplacerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
+        //- Line dashed 
+        .banner__line-dashed
+          .banner__line-dashed--left
+          .banner__line-dashed--right 
+        //- button 
+        .banner__button
+          +button("view profile")
+        
+

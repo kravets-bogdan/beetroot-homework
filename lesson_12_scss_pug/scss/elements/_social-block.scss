@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  font-size: $fs-base;
+  justify-content: center;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid $c-border;
+    background-color: $c-white;
+    color: $c-border;
+    margin-right: 5px;
+    transition: $t-normal;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__icon:hover {
+    background-color: $c-gold;
+    color: $c-white;
+    border-color: transparent;
+  }
+}

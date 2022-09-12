@@ -1,0 +1,43 @@
+* {
+  // border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $ff-base;
+  font-size: $fs-base + px;
+  color: $c-grey;
+  background-color: $c-white;
+}
+h1 {
+  font-size: em(60);
+  line-height: 66px;
+}
+h2 {
+  font-size: em(36);
+  line-height: 42px;
+}
+p {
+  font-size: em(14);
+  line-height: 24px;
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 70px;
+  padding-right: 70px;
+}

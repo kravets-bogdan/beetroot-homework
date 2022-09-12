@@ -1,0 +1,17 @@
+/*  button */
+.button {
+  cursor: pointer;
+  padding: 10px 5px;
+  background-color: $c-white;
+  border: 1px solid $c-gold;
+  font-family: $ff-base;
+  font-weight: 700;
+  font-size: $fs-base;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $c-light-grey;
+  transition: $t-normal;
+}
+.button:hover{
+    opacity: 0.7;
+}

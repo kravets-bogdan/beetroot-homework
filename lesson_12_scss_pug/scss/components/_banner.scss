@@ -1,0 +1,119 @@
+.banner {
+  &__wrapper {
+    display: flex;
+    margin-bottom: 100px;
+  }
+  &__left-side {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-right: 2px solid $c-gold;
+    padding-right: 85px;
+  }
+  &__content {
+    position: relative;
+    width: 400px;
+    max-width: fit-content;
+    padding: 15px;
+  }
+  &__photo {
+    border: 1px solid $c-gold;
+  }
+  &__square {
+    width: 100px;
+    height: 100px;
+    &--left-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 1px solid $c-gold;
+      border-left: 1px solid $c-gold;
+    }
+    &--left-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid $c-gold;
+      border-left: 1px solid $c-gold;
+    }
+    &--right-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 1px solid $c-gold;
+      border-right: 1px solid $c-gold;
+    }
+    &--right-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 1px solid $c-gold;
+      border-right: 1px solid $c-gold;
+    }
+  }
+  &__right-side {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    font-family: $ff-base;
+    font-weight: 900;
+    color: $c-light-grey;
+    margin-bottom: 30px;
+  }
+  &__line {
+    height: 1px;
+    width: 100px;
+    background-color: $c-gold;
+    margin-bottom: 30px;
+  }
+  &__line-dashed {
+    position: relative;
+    height: 4px;
+    width: 50px;
+    background-color: $c-gold;
+    margin-bottom: 25px;
+    &--left {
+      background-color: $c-white;
+      width: 5px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(25% - 2.5px);
+      right: 0;
+    }
+    &--right {
+      background-color: $c-white;
+      width: 5px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: calc(25% - 2.5px);
+    }
+  }
+  &__subtitle {
+    font-family: $ff-raleway;
+    font-weight: 400;
+    font-size: em(24);
+    line-height: 36px;
+    color: $c-light-grey;
+    margin-bottom: 30px;
+  }
+  &__social-block {
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-family: $ff-raleway;
+    font-weight: 500;
+    line-height: 24px;
+    color: $c-grey;
+    margin-bottom: 20px;
+  }
+}

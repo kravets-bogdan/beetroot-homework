@@ -1,13 +1,18 @@
 .app {
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 0 auto;
   width: 100%;
   max-width: 1230px;
-  min-height: 100vh;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 ul {
   list-style-type: none;
+}
+img{
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -37,11 +42,11 @@ a:hover {
 /* main */
 .features {
   margin-bottom: 50px;
-}
-.features-wrapper {
   background-image: url(../assets_7/img/bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
+}
+.features-wrapper {
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -112,6 +117,10 @@ a:hover {
 .logo-wrapper:hover {
   transition: var(--t-normal);
   color: var(--c-orange);
+}
+.icon{
+  width: 42px;
+  height: 42px;
 }
 /* Footer Navigation */
 .navigation-wrapper {

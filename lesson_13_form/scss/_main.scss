@@ -1,0 +1,37 @@
+* {
+  // border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $ff-base;
+  font-size: $fs-base + px;
+  color: $c-grey;
+  background-color: $c-white;
+}
+h1 {
+  font-weight: 500;
+  font-size: em(24);
+  line-height: 32px;
+  color: $c-black;
+  margin-bottom: 40px;
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 570px;
+  padding: 40px;
+}
