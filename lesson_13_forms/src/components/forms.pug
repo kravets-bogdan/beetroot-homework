@@ -38,14 +38,14 @@ mixin forms()
     .wrapper.forms__wrapper
       h2.forms__title Profile
       .forms__block 
-        img.forms__image(src="../assets/images/image.png" alt="photo")
+        img.forms__image(src="./assets/images/image.png" alt="photo")
         .forms__content 
           form(action="#" method='post').form-upload
             label.form-upload__item
               input(type="file" id="avatar" name="avatar").form-upload__input 
-              img.form-upload__icon(src=" ../assets/images/camera.png" alt="camera")
+              img.form-upload__icon(src=" ./assets/images/camera.png" alt="camera")
             button(type="reset").form-upload__button
-              img(src="../assets/images/trash.png" alt="").form-upload__button-icon
+              img(src="./assets/images/trash.png" alt="").form-upload__button-icon
           .forms__subtext Up to 1 MB (300x300 px)
       form(action="#" method='post').form-create
         .form-create__two-forms 

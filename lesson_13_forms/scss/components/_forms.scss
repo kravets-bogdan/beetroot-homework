@@ -14,10 +14,12 @@
     margin-bottom: 20px;
   }
   &__image {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
     border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    height: 80px;
+    min-width: 80px;
+    max-width: 80px;
   }
   &__content {
     display: flex;
