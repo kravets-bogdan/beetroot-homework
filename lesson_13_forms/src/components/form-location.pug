@@ -1,0 +1,17 @@
+mixin form-location()
+  .form-create__two-forms
+    label.form-create__item
+      .form-create__text Country 
+      select(name="custonselect").form-create__select
+        option Select
+        option(value="1") USA
+        option(value="2" disabled) Italy  
+        option(value="3") Portugal  
+        option(value="4") Germany 
+        option(value="5") Poland 
+        option(value="6") Spain 
+      .form-create__error 
+    label.form-create__item
+      .form-create__text City  
+      input(type="text" name="city").form-create__input
+      .form-create__error 

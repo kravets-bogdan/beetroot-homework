@@ -17,14 +17,21 @@ body {
   font-family: $ff-base;
   font-size: $fs-base + px;
   color: $c-grey;
-  background-color: $c-white;
+  background-color: $c-light-grey;
 }
 h1 {
   font-weight: 500;
   font-size: em(24);
   line-height: 32px;
   color: $c-black;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-weight: 500;
+  font-size: em(24);
+  line-height: 32px;
+  color: $c-black;
+  margin-bottom: 20px;
 }
 img {
   width: 100%;
@@ -33,5 +40,16 @@ img {
   width: 100%;
   margin: 0 auto;
   max-width: 570px;
-  padding: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  background-color: $c-white;
+}
+a {
+  text-decoration: none;
+  color: $c-blue;
+  transition: $t-normal;
+}
+a:hover {
+  opacity: 0.5;
 }

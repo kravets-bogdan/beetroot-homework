@@ -1,0 +1,35 @@
+.forms {
+  display: flex;
+  &__text {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: $c-grey;
+    margin-right: 20px;
+  }
+  &__block {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__subtext {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: $c-spanish-grey;
+  }
+}

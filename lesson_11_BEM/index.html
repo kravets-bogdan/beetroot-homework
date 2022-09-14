@@ -320,5 +320,38 @@
         </div>
       </footer>
     </div>
+    <div class="field__wrapper">
+      <input
+        name="file"
+        type="file"
+        name="file"
+        id="field__file-2"
+        class="field field__file"
+        multiple
+      />
+
+      <label class="field__file-wrapper" for="field__file-2">
+        <div class="field__file-fake">Файл не вбран</div>
+        <div class="field__file-button">Выбрать</div>
+      </label>
+    </div>
   </body>
+  <script>
+    let fields = document.querySelectorAll(".field__file");
+    Array.prototype.forEach.call(fields, function (input) {
+      let label = input.nextElementSibling,
+        labelVal = label.querySelector(".field__file-fake").innerText;
+
+      input.addEventListener("change", function (e) {
+        let countFiles = "";
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+
+        if (countFiles)
+          label.querySelector(".field__file-fake").innerText =
+            "Выбрано файлов: " + countFiles;
+        else label.querySelector(".field__file-fake").innerText = labelVal;
+      });
+    });
+  </script>
 </html>

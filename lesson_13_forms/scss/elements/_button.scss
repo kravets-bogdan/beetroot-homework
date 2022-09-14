@@ -1,0 +1,22 @@
+.button {
+  width: 100%;
+  background: $c-blue;
+  border: 1px solid $c-platinum;
+  border-radius: 6px;
+  font-family: $ff-base;
+  font-weight: 500;
+  font-size: em(14);
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: $c-white;
+  padding: 10px;
+  cursor: pointer;
+  transition: $t-normal;
+  &:hover {
+    opacity: 0.5;
+  }
+  &--end{
+    width: 150px;
+  }
+}

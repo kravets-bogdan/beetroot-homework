@@ -1,0 +1,70 @@
+mixin forms()
+  section.forms 
+    .wrapper.forms__wrapper
+      h1.forms__title Create an Account
+      form(action="#" method='post').form-create
+        .form-create__two-forms 
+          label.form-create__item
+            .form-create__text First Name
+            input(type="text" name="First Name").form-create__input
+            .form-create__error Error
+          label.form-create__item
+            .form-create__text Last Name
+            input(type="text" name="Last Name").form-create__input
+            .form-create__error
+        .form-create__email 
+          label.form-create__item
+            .form-create__text Email 
+            input(type="email" name="email" required).form-create__input
+            .form-create__error
+            span.form-create__subtext We'll never share your email with anyone else.
+        .form-create__gender
+          label.form-create__item-gender
+            input(type="radio" name="gender").form-create__input-radio
+            span.form-create__text Male  
+          label.form-create__item-gender
+            input(type="radio" name="gender").form-create__input-radio
+            span.form-create__text Female 
+        //- Italy disabled
+        +form-location()
+        +button("Sign Up", "submit", "")
+        p.form-create__subtext.form-create__subtext--center By clicking the 'Sign Up' button, you confirm that you accept our 
+          a.form-create__link(href="#") Terms of Use 
+          span and 
+          a.form-create__link(href="") Privacy Policy
+        .form-create__footer-text 
+          span.form-create__subtext.form-create__subtext--grey Have an account?
+          a(href="#").forms__link Log In 
+    .wrapper.forms__wrapper
+      h2.forms__title Profile
+      .forms__block 
+        img.forms__image(src="../assets/images/image.png" alt="photo")
+        .forms__content 
+          form(action="#" method='post').form-upload
+            label.form-upload__item
+              input(type="file" id="avatar" name="avatar").form-upload__input 
+              img.form-upload__icon(src=" ../assets/images/camera.png" alt="camera")
+            button(type="reset").form-upload__button
+              img(src="../assets/images/trash.png" alt="").form-upload__button-icon
+          .forms__subtext Up to 1 MB (300x300 px)
+      form(action="#" method='post').form-create
+        .form-create__two-forms 
+          label.form-create__item
+            .form-create__text Name
+            input(type="text" name="Name").form-create__input
+            .form-create__error Error
+          label.form-create__item
+            .form-create__text Email 
+            input(type="email" name="email" required).form-create__input
+            .form-create__error
+        +form-location()
+        .form-create__two-forms 
+          label.form-create__item
+            .form-create__text Zip Code
+            input(type="number" name="number").form-create__input
+            .form-create__error 
+          label.form-create__item
+            .form-create__text Phone Number  
+            input(type="tel" name="tel").form-create__input
+            .form-create__error Error
+        +button("Update", "submit", "button--end")

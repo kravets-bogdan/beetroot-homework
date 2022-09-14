@@ -1,0 +1,108 @@
+.form-create {
+  &__two-forms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &__item {
+    width: 50%;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__input {
+    width: 100%;
+    background: $c-white;
+    border: 1px solid $c-platinum;
+    border-radius: 6px;
+    height: em(40);
+    padding: 5px;
+    transition: $t-normal;
+    &:hover {
+      border: 1px solid $c-blue;
+    }
+  }
+  &__text {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: $c-grey;
+  }
+  &__subtext {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: $c-spanish-grey;
+    &--center {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid $c-platinum;
+    }
+    &--grey {
+      color: $c-grey;
+      margin-right: 20px;
+    }
+  }
+  &__email {
+    margin-bottom: 20px;
+  }
+  &__gender {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  &__item-gender {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__input-radio {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  &__select {
+    padding-left: 10px;
+    width: 100%;
+    height: em(40);
+    font-family: $ff-inter;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: $c-grey;
+    border: 1px solid $c-platinum;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: $t-normal;
+    &:hover {
+      border: 1px solid $c-blue;
+    }
+    // Custom Arrow
+    -webkit-appearance: none;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC") !important;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+  }
+  &__footer-text {
+    border-top: 1px solid $c-platinum;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  &__error {
+    height: 15px;
+    color: red;
+  }
+}
