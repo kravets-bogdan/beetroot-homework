@@ -10,28 +10,11 @@
     margin-right: 20px;
   }
   &__block {
+    width: 100%;
     display: flex;
     margin-bottom: 20px;
   }
-  &__image {
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 20px;
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-  }
-  &__content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  &__subtext {
-    font-family: $ff-base;
-    font-weight: 400;
-    font-size: em(14);
-    line-height: 18px;
-    letter-spacing: -0.1px;
-    color: $c-spanish-grey;
+  &__link {
+    font-weight: 500;
   }
 }

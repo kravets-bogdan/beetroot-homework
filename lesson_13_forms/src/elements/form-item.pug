@@ -1,0 +1,15 @@
+mixin form-item(args={})
+  - let classes = ''
+  - args.type == ('radio' || 'checkbox') ? classes += 'form-create__input--hide' : null
+  - args.type == ('file') ? classes += ' form-create__input-file ' : null  
+  label.form-create__item
+    input.form-create__input(type=args.type  class=classes name=args.name value=args.value)
+    if args.type == 'radio'
+      .form-create__item--circle
+        .form-create__item--small 
+    if args.type == 'file'
+      div(type="text").form-create__input.form-create__input--size
+        img(src=args.icon  alt="icon").form-create__icon
+      span.form-create__error  Error 
+      .form-create__subtext Up to 1 MB (300x300 px)
+
