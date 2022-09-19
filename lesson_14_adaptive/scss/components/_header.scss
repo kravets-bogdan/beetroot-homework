@@ -6,9 +6,6 @@
   height: 100px;
   width: 100%;
   background-color: $c-white;
-  @include media("<=small") {
-    max-width: 320px;
-  }
   &__wrapper {
     display: flex;
     align-items: center;
