@@ -1,24 +1,23 @@
 mixin blog-block(name)
-  .blog__block 
-    if name == 'reverse'
-      .blog__block.blog__block--reverse
-        .blog__image.blog__image--reverse
-          img(src="./assets/images/window.png" alt="window").blog__photo
-        .blog__content.blog__content--reverse
-          span.blog__subtext Technology, Interface Design 
-          p.blog__bold-text Using UX Design to Build a Sustainable Future
-          span.blog__subtext.blog__subtext--date 6 May, 2020
-          p.blog__text Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. 
-          a(href = '#').blog__link
-            <i class="bi bi-arrow-right"></i>
-    else  
-      .blog__block 
-        .blog__image 
-          img(src="./assets/images/arrows.jpg" alt="arrows").blog__photo
-        .blog__content
-          span.blog__subtext Technology, Interface Design 
-          p.blog__bold-text Using UX Design to Build a Sustainable Future
-          span.blog__subtext.blog__subtext--date 6 May, 2020
-          p.blog__text Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. 
-          a(href = '#').blog__link
-            <i class="bi bi-arrow-right"></i>
+  if name == 'reverse'
+    .blog__block.blog__block--reverse
+      .blog__image.blog__image--reverse
+        img(src="./assets/images/window.png" alt="window").blog__photo
+      .blog__content.blog__content--reverse
+        span.blog__subtext Technology, Interface Design 
+        p.blog__bold-text Using UX Design to Build a Sustainable Future
+        span.blog__subtext.blog__subtext--date 6 May, 2020
+        p.blog__text Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. 
+        a(href = '#').blog__link
+          <i class="bi bi-arrow-right"></i>
+  else  
+    .blog__block 
+      .blog__image 
+        img(src="./assets/images/arrows.jpg" alt="arrows").blog__photo
+      .blog__content
+        span.blog__subtext Technology, Interface Design 
+        p.blog__bold-text Using UX Design to Build a Sustainable Future
+        span.blog__subtext.blog__subtext--date 6 May, 2020
+        p.blog__text Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. 
+        a(href = '#').blog__link
+          <i class="bi bi-arrow-right"></i>
