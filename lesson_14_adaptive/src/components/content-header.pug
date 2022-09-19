@@ -1,0 +1,21 @@
+mixin content-header(name)
+  .content 
+    if name == 'latest-photos'
+      .content__block
+        h3.content__title Latest-photos
+        a(href = '#').content__link
+          span.content__text--view-all View all 
+          <i class="bi bi-arrow-right"></i>
+      .content__list 
+        +content__item('latest-photos')
+        +content__item('latest-photos-1')
+        +content__item('latest-photos-2')
+    else if name == 'the-most-popular'
+      .content__block
+        h3.content__title The Most Popular
+        a(href = '#').content__link
+          span.content__text--view-all View all   
+          <i class="bi bi-arrow-right"></i>
+      .content__list.content__list--margin-bottom.content__list--the-most-popular 
+        +content__item('the-most-popular')
+        +content__item('the-most-popular-1')

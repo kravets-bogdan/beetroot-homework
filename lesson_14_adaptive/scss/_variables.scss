@@ -1,0 +1,19 @@
+// Color
+$c-white: #ffffff;
+$c-black: #000000;
+$c-grey: #7B7B7B;
+$c-dark-grey:#565656;
+$c-beige: #F4F4F4;
+
+// Font size
+$fs-base: 16;
+
+// Font familly
+$ff-base: 'Lato', sans-serif;
+$ff-red-hat-display: 'Red Hat Display', sans-serif;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;

@@ -1,0 +1,11 @@
+.the_most_popular{
+  margin-bottom: 90px;
+  &__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include media("<=small") {
+    margin-bottom: 70px;
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  background-color: $c-white;
+  @include media("<=small") {
+    max-width: 320px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 0;
+  }
+  &__logo {
+    width: 100%;
+    max-width: 140px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+  &__navigation {
+    transition: $t-normal;
+    @include media("<=tablet") {
+      opacity: 0;
+      pointer-events: none;
+    }
+    &--show {
+      opacity: 1;
+    }
+  }
+  &__search {
+    margin-left: 80px;
+    width: 16px;
+    height: 17px;
+  }
+  &__burger {
+    display: none;
+    margin-left: 35px;
+    @include media("<=tablet") {
+      display: block;
+    }
+  }
+}

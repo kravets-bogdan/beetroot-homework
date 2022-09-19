@@ -1,0 +1,6 @@
+mixin blog(name)
+  section.blog 
+    .wrapper.blog__wrapper 
+      h2.blog__title Blog 
+      +blog-block 
+      +blog-block('reverse')

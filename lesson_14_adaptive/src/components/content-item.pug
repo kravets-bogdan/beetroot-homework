@@ -1,0 +1,52 @@
+mixin content__item(number)
+  if number == 'latest-photos-1'
+    .content__item.content__item--row-reverse  
+      a(href = '#').content__link
+        img(src="./assets/images/arrows_2_3.jpg" alt="arrows").content__photo
+      .content__info.content__info--tablet-margin 
+        .content__under-photo 
+          span.content__subtext Technology
+          span.content__subtext 6 May, 2020
+        span.content__bold-text Using UX Design to Build a Sustainable Future
+        p.content__text UI has to make a huge visual difference between warning, an alert and a success.
+  else if number == 'latest-photos-2'
+    .content__item  
+      a(href = '#').content__link
+        img(src="./assets/images/roof_3_3.jpg" alt="roof").content__photo
+      .content__info
+        .content__under-photo 
+          span.content__subtext Visual Design
+          span.content__subtext 8 June, 2020
+        span.content__bold-text Creativity vs. UX
+        p.content__text Is it possible to create a delightful user experience without following best UX practices?
+  else if number == 'latest-photos'
+    .content__item
+      a(href = '#').content__link
+        img(src="./assets/images/lights_1_3.jpg" alt="lights").content__photo
+      .content__info
+        .content__under-photo 
+          span.content__subtext Interface Design
+          span.content__subtext 8 June, 2020
+        span.content__bold-text UX traffic light colours
+        p.content__text UI has to make a huge visual difference between warning, an alert and a success.
+  else if number == 'the-most-popular'
+    .content__item.content__item--the-most-popular
+      a(href = '#').content__link
+        img(src="./assets/images/glass.jpg" alt="glass").content__photo.content__photo--the-most-popular
+      .content__under-photo 
+        span.content__subtext Interface Design
+        span.content__subtext 8 June, 2020
+      span.content__bold-text Mentorship Match — How a simple LinkedIn feature can boost diversity
+      p.content__text LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand
+  else if number == 'the-most-popular-1'
+    .content__item.content__item--the-most-popular
+      a(href = '#').content__link
+        img(src="./assets/images/arrows_wall.jpg" alt="arrows_wall").content__photo.content__photo--the-most-popular
+      .content__under-photo 
+        span.content__subtext Visual Design
+        span.content__subtext 8 June, 2020
+      span.content__bold-text Creativity vs. UX
+      p.content__text.content__text--hide Is it possible to create a delightful user experience without following best UX practices?
+      p.content__text.content__text--visibility Is it possible to create a delightful user experience without following best UX practices?
+      p.content__text.content__text--visibility UI has to make a huge visual difference between warning, an alert and a success.
+      

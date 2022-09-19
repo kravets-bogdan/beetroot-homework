@@ -1,0 +1,55 @@
+.text {
+  margin-bottom: 90px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media("<=tablet") {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon {
+    @include media("<=tablet") {
+      margin-bottom: 50px;
+    }
+  }
+  &__title {
+    font-family: $ff-red-hat-display;
+    font-weight: 400;
+    font-size: em(24);
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    color: $c-black;
+    padding-right: 115px;
+    &:last-child {
+      padding-right: 0;
+    }
+    @include media("<=small") {
+      padding-right: 0;
+    }
+  }
+  &__text {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: $c-dark-grey;
+    margin-bottom: 50px;
+    padding-left: 115px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include media("<=tablet") {
+      text-align: end;
+    }
+    @include media("<=small") {
+      padding-left: 0;
+      text-align: start;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.banner {
+  margin-top: 100px;
+  height: 100%;
+  background-image: url(./assets/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+  &__wrapper {
+    height: 600px;
+    @include media("<=tablet") {
+      height: 320px;
+    }
+    @include media("<=small") {
+      height: 500px;
+    }
+  }
+  @include media("<=tablet") {
+    background-image: url(./assets/images/bg-image_768.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @include media("<=small") {
+    background-image: url(./assets/images/bg-image_320.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__text {
+    padding-top: 100px;
+    padding-right: 400px;
+    font-family: $ff-red-hat-display;
+    font-weight: 600;
+    font-size: em(48);
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: $c-black;
+    @include media("<=tablet") {
+      padding-top: 30px;
+      padding-right: 50px;
+      font-size: em(36);
+      line-height: 50px;
+    }
+    @include media("<=small") {
+      font-size: em(30);
+      padding-right: 0px
+    }
+  }
+}

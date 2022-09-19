@@ -1,0 +1,34 @@
+.burger {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  position: relative;
+  z-index: 901;
+  &:hover {
+    background-color: rgba($c-black, 0.1);
+  }
+  &--open {
+    & > .burger__line {
+      transform: rotate(45deg)translate(6px, 5px);
+      &:nth-child(2) {
+        transform: rotate(-45deg) translate(1px , 0px);
+      }
+      &:last-child {
+        opacity: 0;
+        transform: rotate(0)
+      }
+    }
+  }
+  &__line {
+    transition: $t-normal;
+    width: 34px;
+    height: 2px;
+    background-color: $c-black;
+    display: block;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
