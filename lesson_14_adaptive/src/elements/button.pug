@@ -2,13 +2,14 @@ mixin button(args={})
   - const type = args.type || 'button'
   - let classes = '' 
   - args.white ? classes += ' button--white ' : null 
-  
+
   button.button(type=type class=classes)
     if args.icon 
-      img(src=args.icon  alt="icon").button__icon
+      a(href="#").button__icon
+          svg.icon.icon-search
+            use(xlink:href='#icon-search')
     else
       if args.text  
         span=args.text
       else
         span(style="color:red;") Default
-  

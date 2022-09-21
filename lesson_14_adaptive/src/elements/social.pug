@@ -1,6 +1,17 @@
 mixin social()
   .social 
-    +social-icon("instagram")
-    +social-icon("facebook")
-    +social-icon("twitter")
-    +social-icon("linkedin")
+    a(href="https://www.instagram.com" target="_blank").social__icons 
+      svg.icon.icon-instagram-icon 
+        use(xlink:href='#icon-instagram-icon')
+    a(href="https://www.facebook.com" target="_blank").social__icons 
+      svg.icon.icon-facebook-icon
+        use(xlink:href='#icon-facebook-icon')
+    a(href="https://twitter.com/?lang=ru"  target="_blank").social__icons 
+      svg.icon.icon-twitter-icon
+        use(xlink:href='#icon-twitter-icon')
+    a(href="https://ua.linkedin.com" target="_blank").social__icons 
+      svg.icon.icon-linkedin-icon
+        use(xlink:href='#icon-linkedin-icon' )
+    a(href="#").social__icons  
+      svg.icon.icon-mobile
+        use(xlink:href='#icon-mobile')
