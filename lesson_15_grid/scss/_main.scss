@@ -1,0 +1,55 @@
+* {
+  // border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: $c-white;
+  font-size: $fs-base + px;
+  font-family: $ff-base;
+  color: $c-black;
+}
+
+h1,
+h2 {
+  font-family: "Delius Unicase", cursive;
+  font-size: em(36);
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  line-height: 23px;
+}
+
+.wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1210px;
+  margin: 0 auto;
+  width: 100%;
+}
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  stroke-width: 0;
+  height: 1em;
+  width: 1em;
+}

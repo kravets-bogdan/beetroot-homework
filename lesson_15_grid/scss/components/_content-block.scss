@@ -1,0 +1,185 @@
+.content-block {
+  &__title {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  &__list {
+    display: grid;
+    gap: 30px;
+    &--1 {
+      grid-template-areas:
+        "a b b"
+        "c c d"
+        "e f f";
+    }
+    &--2 {
+      grid-template-areas:
+        "g h h"
+        "i i j"
+        "i i j"
+        "k k l";
+    }
+    &--3 {
+      margin-bottom: 80px;
+      grid-template-areas:
+        "m n o"
+        "p n q"
+        "r s q"
+        "r t t"
+        "u u v";
+    }
+  }
+  &__photo {
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+  }
+  &__text {
+    color: $c-white;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+  }
+  &__date {
+    color: $c-chinese-white;
+    font-weight: 400;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    opacity: 0;
+  }
+  &__button {
+    cursor: pointer;
+    background-color: $c-chinese-white;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__item {
+    border-radius: 20px;
+    position: relative;
+    height: 370px;
+    background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.44) 34%,
+      rgba(187, 186, 192, 0.26) 62%
+    );
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: $t-normal;
+    &:hover .content-block__buttons {
+      opacity: 1;
+    }
+    &:hover {
+      background: none;
+    }
+
+    &--a {
+      grid-area: a;
+    }
+
+    &--b {
+      grid-area: b;
+    }
+
+    &--c {
+      grid-area: c;
+    }
+
+    &--d {
+      grid-area: d;
+    }
+
+    &--e {
+      grid-area: e;
+    }
+
+    &--f {
+      grid-area: f;
+    }
+
+    &--g {
+      grid-area: g;
+    }
+
+    &--h {
+      grid-area: h;
+    }
+
+    &--i {
+      height: 770px;
+      grid-area: i;
+    }
+
+    &--j {
+      height: 770px;
+      grid-area: j;
+    }
+
+    &--k {
+      grid-area: k;
+    }
+
+    &--l {
+      grid-area: l;
+    }
+
+    &--m {
+      grid-area: m;
+    }
+
+    &--n {
+      height: 770px;
+      grid-area: n;
+    }
+
+    &--o {
+      grid-area: o;
+    }
+
+    &--p {
+      grid-area: p;
+    }
+
+    &--q {
+      height: 770px;
+      grid-area: q;
+    }
+
+    &--r {
+      height: 770px;
+      grid-area: r;
+    }
+
+    &--s {
+      grid-area: s;
+    }
+
+    &--t {
+      grid-area: t;
+    }
+
+    &--u {
+      grid-area: u;
+    }
+
+    &--v {
+      grid-area: v;
+    }
+  }
+}
