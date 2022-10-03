@@ -1,0 +1,269 @@
+.content-block {
+  margin-bottom: 100px;
+  &__title {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  &__list {
+    position: relative;
+    display: grid;
+    gap: 30px;
+    &--1 {
+      grid-template-areas:
+        "a b b"
+        "c c d"
+        "e f f";
+      @include media("<=desktop") {
+        grid-template-areas:
+          "a"
+          "b"
+          "c"
+          "d"
+          "e"
+          "f";
+      }
+    }
+  }
+  &__text {
+    color: $c-white;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+  }
+  &__date {
+    color: $c-chinese-white;
+    font-weight: 400;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    opacity: 0;
+  }
+  &__button {
+    cursor: pointer;
+    background-color: $c-chinese-white;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+      background: linear-gradient(
+        360deg,
+        rgb(243, 231, 14) 34%,
+        rgb(50, 9, 255) 62%
+      );
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      background: linear-gradient(
+        360deg,
+        #241f24 0%,
+        rgba(91, 91, 91, 0.44) 34%,
+        rgba(187, 186, 192, 0.26) 62%
+      );
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes hide {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  &__photo {
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    &:hover {
+      animation: 5s linear 1 hide;
+    }
+  }
+  &__item {
+    -webkit-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    height: 370px;
+    background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.44) 34%,
+      rgba(187, 186, 192, 0.26) 62%
+    );
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: $t-normal;
+    &:hover .content-block__buttons {
+      opacity: 1;
+    }
+    &:hover {
+      background: none;
+      animation: 6, 5s ease-out 1 flip;
+    }
+
+    &--a {
+      grid-area: a;
+      max-width: 370px;
+    }
+
+    &--b {
+      grid-area: b;
+    }
+
+    &--c {
+      grid-area: c;
+    }
+
+    &--d {
+      grid-area: d;
+      max-width: 370px;
+    }
+
+    &--e {
+      grid-area: e;
+      max-width: 370px;
+    }
+
+    &--f {
+      grid-area: f;
+    }
+
+    &--g {
+      grid-area: g;
+    }
+
+    &--h {
+      grid-area: h;
+    }
+
+    &--i {
+      height: 770px;
+      grid-area: i;
+    }
+
+    &--j {
+      height: 770px;
+      grid-area: j;
+    }
+
+    &--k {
+      grid-area: k;
+    }
+
+    &--l {
+      grid-area: l;
+    }
+
+    &--m {
+      grid-area: m;
+    }
+
+    &--n {
+      height: 770px;
+      grid-area: n;
+    }
+
+    &--o {
+      grid-area: o;
+    }
+
+    &--p {
+      grid-area: p;
+    }
+
+    &--q {
+      height: 770px;
+      grid-area: q;
+    }
+
+    &--r {
+      height: 770px;
+      grid-area: r;
+    }
+
+    &--s {
+      grid-area: s;
+    }
+
+    &--t {
+      grid-area: t;
+    }
+
+    &--u {
+      grid-area: u;
+    }
+
+    &--v {
+      grid-area: v;
+    }
+  }
+  @keyframes circle {
+    0% {
+      top: 0;
+      right: 0;
+      left: calc(100% - 50px);
+      bottom: calc(100% - 50px);
+      background-color: yellowgreen;
+    }
+    25%{
+      top: calc(100% - 50px);
+      right: 0;
+      left: calc(100% - 50px);
+      bottom: 0;
+      background-color: yellow;
+    }
+    50%{
+      top: calc(100% - 50px);
+      right: calc(100% - 50px);
+      left: 0;
+      bottom: 0;
+      background-color: orange;
+    }
+    75%{
+      top: 0;
+      right: calc(100% - 50px);
+      left: 0;
+      bottom: calc(100% - 50px);
+      background-color: red;
+    }
+    100%{
+      top: 0;
+      right: 0;
+      left: calc(100% - 50px);
+      bottom: calc(100% - 50px);
+      background-color: yellowgreen;
+    }
+  }
+  &__square {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    animation: 25s linear infinite circle;
+    z-index: 100;
+  }
+}
