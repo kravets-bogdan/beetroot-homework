@@ -47,6 +47,8 @@ const newProduct = () => {
   });
   return productsList;
 };
+
+
 //* Sort array
 
 productsList.sort(function (a, b) {
@@ -84,10 +86,3 @@ const addProduct = (name) => {
     }
   }
 };
-
-//
-// function sumProduct() {
-//   for (let i = 0; i < productList.length; i++) {
-//     productList[i].sum = productList[i].price * productList[i].amount;
-//   }
-// }
