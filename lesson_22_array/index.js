@@ -45,7 +45,6 @@ const newProduct = () => {
     count: +prompt("Enter amount of product"),
     bought: confirm("You already bought this?"),
   });
-  return productsList;
 };
 
 
