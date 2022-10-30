@@ -26,7 +26,7 @@ const car = {
   },
   // Find Driver
   findDriver: function () {
-    if (this.drivers.includes(prompt("Name Driver")) == true) {
+    if (this.drivers.includes(prompt("Name Driver")) === true) {
       console.log("We have this driver");
     } else {
       console.log("Enter this name again");

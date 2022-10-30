@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Back end</title>
+  </head>
+  <body>
+    <div class="p-pannel">
+      <nav class="p-pannel__navigation">
+        <ul class="p-pannel__list">
+          <li class="p-pannel__item">
+            <a class="p-pannel__link" href="../index.html" id="up"
+              >Головна сторінка</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="app" id="js-app">
+      <form method="get" class="form" id="js-form">
+        <!-- Header -->
+        <div class="form__header">
+          <!-- title -->
+          <h1 class="form__title">Form</h1>
+          <label class="form__label form__label--select">
+            <!-- language -->
+            <select name="language">
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+              <option value="ua">UA</option>
+            </select>
+          </label>
+        </div>
+        <!-- First name -->
+        <label class="form__label">
+          <span>First name</span>
+          <input type="text" name="firstname" class="form__firstname" />
+          <div class="form__error" id="js-form-first-name-error"></div>
+        </label>
+        <!-- Last name -->
+        <label class="form__label">
+          <span>Last name</span>
+          <input type="text" name="lastname" class="form__lastname" />
+          <div class="form__error" id="js-form-lasts-name-error"></div>
+        </label>
+        <!-- Email -->
+        <label class="form__label">
+          <span>Email</span>
+          <input type="email" name="email" class="form__email" />
+          <div class="form__error" id="js-form-email-error"></div>
+        </label>
+        <label class="form__label">
+          <span>Username</span>
+          <input type="text" name="username" class="form__username" />
+          <div class="form__error" id="js-form-username-error"></div>
+        </label>
+        <!-- Password -->
+        <label class="form__label">
+          <span>Password</span>
+          <input type="password" name="password" class="form__password" />
+          <div class="form__error" id="js-form-password-error"></div>
+        </label>
+        <!-- Season animation -->
+        <label class="form__label">
+          <span>Disabled season animation</span>
+          <input
+            type="checkbox"
+            name="disabledSeasonAnimation"
+            class="form__disabled-season-animation"
+          />
+          <div
+            class="form__error"
+            id="js-form-disabled-season-animation-error"
+          ></div>
+        </label>
+        <!-- Footer -->
+        <div class="for__footer">
+          <button class="button form__submit" type="submit">
+            <span>submit</span>
+          </button>
+          <button class="button form__reset" type="reset">
+            <span>reset</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script defer type="module" src="/index.js"></script>
+</html>

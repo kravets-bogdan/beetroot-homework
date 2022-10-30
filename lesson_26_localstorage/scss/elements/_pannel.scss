@@ -1,0 +1,18 @@
+:root {
+  --p-c-emerald: #50c878;
+  --p-bg-grey: #f5f5dc;
+  --f-size: 18px;
+}
+.p-pannel {
+  font-size: var(--f-size);
+}
+.p-pannel__navigation {
+  background-color: var(--p-bg-grey);
+}
+.p-pannel__link {
+  text-decoration: none;
+  color: var(--p-c-emerald);
+}
+.p-pannel__list {
+  list-style-type: none;
+}

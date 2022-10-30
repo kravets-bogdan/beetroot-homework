@@ -47,20 +47,13 @@ const newProduct = () => {
   });
 };
 
-
 //* Sort array
 
-productsList.sort(function (a, b) {
-  // Two variant
-  // if (a.bought < b.bought) {
-  //   return -1;
-  // }
-  return a.bought - b.bought;
-});
+productsList.sort((a, b) => a.bought - b.bought);
 console.log(productsList);
 
 //* Change bought status
-const buyingProduct = () => {
+const buyingProduct = (nameProduct) => {
   productsList.find((product) => product.name === nameProduct).bought = true;
   console.log(productsList);
 };
@@ -70,18 +63,19 @@ const deleteFromList = (nameProduct) => {
   for (let product of productsList) {
     if (product.name === nameProduct) {
       console.log(productsList.splice(productsList.indexOf(product), 1));
+      break;
     }
   }
 };
 
 // * Add product or count++
 const addProduct = (name) => {
-  for (let product of productsList) {
+  productsList.forEach((product) => {
     if (product.name === name) {
       product.count++;
       return console.log(productsList);
     } else {
       return newProduct();
     }
-  }
+  });
 };

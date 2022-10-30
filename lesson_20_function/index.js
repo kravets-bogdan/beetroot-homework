@@ -15,16 +15,16 @@
 const log = console.log;
 //* number of args
 let sum = 0;
-const NumberOfArgs = (args = []) => {
+const numberOfArgs = (args = []) => {
   for (let i = 1; i <= args.length; i++) {
     sum += 1;
   }
   log(`Кількість аргументів: ${sum}`);
 };
-NumberOfArgs([1, 2, 3, 4, 5, "dsdd"]);
+numberOfArgs([1, 2, 3, 4, 5, 'dsdd']);
 
 //* Function -1 1 0
-const TwoNumber = (a, b) => {
+const twoNumber = (a, b) => {
   if (a < b) {
     return -1;
   } else if (a > b) {
@@ -33,27 +33,27 @@ const TwoNumber = (a, b) => {
     return 0;
   }
 };
-log(TwoNumber(2, 1));
+log(twoNumber(2, 1));
 
 //* Factorial
-const FunFactorial = (value) => {
+const funFactorial = (value) => {
   let result = 1;
   for (let i = 1; i <= value; i++) {
     result *= i;
   }
   return result;
 };
-log(FunFactorial(4));
+log(funFactorial(4));
 
 //* Transform
-const FunTransform = (a, b, c) => {
-  let sum = +("" + a + b + c);
+const funTransform = (a, b, c) => {
+  let sum = +('' + a + b + c);
   return sum;
 };
-log(FunTransform(1, 2, 3));
+log(funTransform(1, 2, 3));
 
 //* Rectangle area
-const FunRectangleArea = (a, b) => {
+const funRectangleArea = (a, b) => {
   let area = 0;
   if (b) {
     area = a * b;
@@ -63,27 +63,32 @@ const FunRectangleArea = (a, b) => {
     return area;
   }
 };
-log(FunRectangleArea(2));
+log(funRectangleArea(2));
 
 //* Complete number
-const FunCompleteNumber = (a) => {
+const funCompleteNumber = (a) => {
   let result = 0;
-  for (let i = 0; i < a; i++) {
-    if (a % i == 0) {
+  for (let i = 0; i <= a / 2; i++) {
+    if (a % i === 0) {
       result += i;
     }
   }
-  if (a == result) {
-    log("Yes");
+  if (a === result) {
+    return true;
   } else {
-    log("No");
+    return false;
   }
 };
-log(FunCompleteNumber(28));
+log(funCompleteNumber(28));
 
-//* Diapason
-const FunDiapason = (min, max) => {
+//* Range
+const range = (min, max) => {
+  const result = {};
   for (let i = min; i < max; i++) {
-    const element = array[i];
+    result[i] = funCompleteNumber(i);
   }
+  return result;
 };
+log(range(2, 10));
+
+

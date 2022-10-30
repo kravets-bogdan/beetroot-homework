@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid silver;
+  &__label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &--select {
+      max-width: 50px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__error {
+    height: 10px;
+    color: rgb(201, 28, 28);
+    text-align: end;
+  }
+}
