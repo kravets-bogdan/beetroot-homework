@@ -59,10 +59,14 @@ const regestration = (e) => {
     disabledSeasonAnimation,
     language,
   };
-  console.log('data: ', reqestData);
   const URL =
     'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
 
+  const emailError = document.getElementById('js-form-email-error');
+  console.log('emailError: ', emailError);
+  const userNameError = document.getElementById('js-form-username-error');
+  console.log('userNameError: ', userNameError);
+  
   fetch(URL, {
     method: 'post',
     body: JSON.stringify(reqestData),
@@ -73,27 +77,26 @@ const regestration = (e) => {
     .then((res) => res.json())
     .then((response) => {
       console.log('response: ', response);
-      if (response.succes) {
+      if (response.success) {
         alert(response.message[language]);
-      } else if (
-        'A user is already registered under this email32323' === false
-      ) {
-        innerText(items.firstName.id, response.message[language]);
       } else if (
         'A user is already registered under this email ' ||
         'Под этим емейлом уже зарегистрировано пользователя' ||
         'Під цим емейлом уже зареєстровано користувача' ===
           response.message[language]
       ) {
-        innerText(items.email.id, response.message[language]);
+        // innerText(items.email.id, response.message[language]);
+        emailError.innerText = response.message[language];
       } else if (
         'This nickname is already taken ' ||
         'Этот псевдоним уже занят' ||
         'Цей псевдонім уже зайнятий' === response.message[language]
       ) {
-        innerText(items.userName.id, response.message[language]);
+        // innerText(items.userName.id, response.message[language]);
+        userNameError.innerText = response.message[language];
       }
 
+      console.log('items.userName.id.innerText: ', items.userName.id.innerText);
       console.log('items.username.id:', items.userName.id);
     });
 };
