@@ -59,14 +59,12 @@ const regestration = (e) => {
     disabledSeasonAnimation,
     language,
   };
-  const URL =
-    'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
 
-  const emailError = document.getElementById('js-form-email-error');
-  console.log('emailError: ', emailError);
-  const userNameError = document.getElementById('js-form-username-error');
-  console.log('userNameError: ', userNameError);
-  
+  const URL =
+  'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
+  console.log('reqestData: ', reqestData);
+
+
   fetch(URL, {
     method: 'post',
     body: JSON.stringify(reqestData),
@@ -79,25 +77,24 @@ const regestration = (e) => {
       console.log('response: ', response);
       if (response.success) {
         alert(response.message[language]);
-      } else if (
-        'A user is already registered under this email ' ||
-        'Под этим емейлом уже зарегистрировано пользователя' ||
-        'Під цим емейлом уже зареєстровано користувача' ===
-          response.message[language]
-      ) {
-        // innerText(items.email.id, response.message[language]);
-        emailError.innerText = response.message[language];
-      } else if (
-        'This nickname is already taken ' ||
-        'Этот псевдоним уже занят' ||
-        'Цей псевдонім уже зайнятий' === response.message[language]
-      ) {
-        // innerText(items.userName.id, response.message[language]);
-        userNameError.innerText = response.message[language];
+      } else {
+        if (
+          'A user is already registered under this email ' ||
+          'Под этим емейлом уже зарегистрировано пользователя' ||
+          'Під цим емейлом уже зареєстровано користувача' ===
+            response.message[language]
+        ) {
+          innerText(items.email.id, response.message[language]);
+          // emailError.innerText = response.message[language];
+        } else if (
+          'This nickname is already taken ' ||
+          'Этот псевдоним уже занят' ||
+          'Цей псевдонім уже зайнятий' === response.message[language]
+        ) {
+          innerText(items.userName.id, response.message[language]);
+          // userNameError.innerText = response.message[language];
+        }
       }
-
-      console.log('items.userName.id.innerText: ', items.userName.id.innerText);
-      console.log('items.username.id:', items.userName.id);
     });
 };
 
