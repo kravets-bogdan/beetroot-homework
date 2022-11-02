@@ -1,5 +1,5 @@
-const innerText = (id, value) =>
-  (document.getElementById(id).innerText = value);
+const innerText = (id, value) => (document.getElementById(id).innerText = value);
+const errors = document.getElementsByClassName('form__error');
 
 const items = {
   firstName: {
@@ -19,6 +19,7 @@ const items = {
     id: 'js-form-username-error',
   },
 };
+console.log('items: ', items);
 const regestration = (e) => {
   // Відміна стандратної поведінки
   e.preventDefault();
@@ -60,39 +61,36 @@ const regestration = (e) => {
     language,
   };
 
-  const URL =
-  'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
+  const URL = 'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
   console.log('reqestData: ', reqestData);
-
 
   fetch(URL, {
     method: 'post',
     body: JSON.stringify(reqestData),
     headers: {
       'content-type': 'application/json',
+      // 'Access-Control-Allow-Origin': '*',
     },
+    // mode: 'no-cors',
   })
     .then((res) => res.json())
     .then((response) => {
-      console.log('response: ', response);
+      console.log('response: ', response.success);
       if (response.success) {
+        for (const message of errors) {
+          message.innerText = '';
+        }
         alert(response.message[language]);
       } else {
-        if (
-          'A user is already registered under this email ' ||
-          'Под этим емейлом уже зарегистрировано пользователя' ||
-          'Під цим емейлом уже зареєстровано користувача' ===
-            response.message[language]
-        ) {
+        if (response.message.en === 'A user is already registered under this email') {
           innerText(items.email.id, response.message[language]);
-          // emailError.innerText = response.message[language];
-        } else if (
-          'This nickname is already taken ' ||
-          'Этот псевдоним уже занят' ||
-          'Цей псевдонім уже зайнятий' === response.message[language]
-        ) {
+        } else {
+          innerText(items.email.id, '');
+        }
+        if (response.message.en === 'This nickname is already taken') {
           innerText(items.userName.id, response.message[language]);
-          // userNameError.innerText = response.message[language];
+        } else {
+          innerText(items.userName.id, '');
         }
       }
     });
