@@ -19,7 +19,6 @@ const items = {
     id: 'js-form-username-error',
   },
 };
-console.log('items: ', items);
 const regestration = (e) => {
   // Відміна стандратної поведінки
   e.preventDefault();
@@ -40,12 +39,13 @@ const regestration = (e) => {
   const disabledSeasonAnimation = !!form.get('disabledSeasonAnimation');
 
   const language = form.get('language');
-
+  localStorage.setItem('languageActive', language);
   // * Перевірка First name
   if (!firstName) {
     innerText(items.firstName.id, items.firstName.errors.noName);
     return;
-  } else if (firstName.length < items.firstName.minLength) {
+  }
+  if (firstName.length < items.firstName.minLength) {
     innerText(items.firstName.id, items.firstName.errors.getMinLength());
   } else {
     innerText(items.firstName.id, null);
@@ -75,7 +75,6 @@ const regestration = (e) => {
   })
     .then((res) => res.json())
     .then((response) => {
-      console.log('response: ', response.success);
       if (response.success) {
         for (const message of errors) {
           message.innerText = '';
