@@ -13,15 +13,23 @@
       <nav class="p-pannel__navigation">
         <ul class="p-pannel__list">
           <li class="p-pannel__item">
-            <a class="p-pannel__link" href="../index.html" id="up"
-              >Головна сторінка</a
-            >
+            <a class="p-pannel__link" href="../index.html" id="up">Головна сторінка</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="app" id="js-app">
-      <div id="js-div" style="display: flex; flex-direction: column"></div>
+      <div id="js-div" style="display: flex; flex-direction: column; margin-bottom: 100px"></div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
     </div>
   </body>
   <script defer type="module" src="./index.js"></script>
