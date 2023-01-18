@@ -46,3 +46,4 @@ const stopResize = () => {
   document.removeEventListener('mousemove', resizeDiv);
   document.removeEventListener('mouseup', stopResize);
 };
+

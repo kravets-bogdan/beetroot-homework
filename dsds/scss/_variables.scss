@@ -1,0 +1,21 @@
+// Color
+$c-light-grey: #f7f7f7;
+$c-platinum: #e4e4e4;
+$c-white: #ffffff;
+$c-grey: #545454;
+$c-black: #1c1c1c;
+$c-blue: #007bff;
+$c-spanish-grey: #969696;
+
+// Font size
+$fs-base: 14;
+
+// Font familly
+$ff-base: "Roboto", sans-serif;
+$ff-inter: "Inter", sans-serif;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;

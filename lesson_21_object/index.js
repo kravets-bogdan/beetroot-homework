@@ -1,44 +1,42 @@
+const test = 1;
+//
 //  Car
 const car = {
-  manufacturer: "Mercedes-Benz",
-  model: "S-class",
+  manufacturer: 'Mercedes-Benz',
+  model: 'S-class',
   yearOfProduction: 2022,
   averageSpeed: 120,
   fuelTankCapacity: 76,
   averageFuelConsumption: 7.5,
-  drivers: ["Alex"],
+  drivers: ['Alex'],
   // Car info
   info: function () {
     for (let key in this) {
-      if (
-        key !== "info" &&
-        key !== "addDriver" &&
-        key !== "findDriver" &&
-        key !== "timeAndFuel"
-      ) {
+      if (key !== 'info' && key !== 'addDriver' && key !== 'findDriver' && key !== 'timeAndFuel') {
         console.log(`${key} - ${this[key]}`);
       }
     }
   },
+  addDriver()
   // Add Driver
   addDriver: function () {
-    this.drivers.push(prompt("Name Driver"));
+    // test
+    console.log('test: ', test);
+    this.drivers.push(prompt('Name Driver'));
   },
   // Find Driver
   findDriver: function () {
-    if (this.drivers.includes(prompt("Name Driver")) === true) {
-      console.log("We have this driver");
+    if (this.drivers.includes(prompt('Name Driver')) === true) {
+      console.log('We have this driver');
     } else {
-      console.log("Enter this name again");
+      console.log('Enter this name again');
     }
   },
   // Amount time and fuel
   timeAndFuel: function () {
-    const distance = +prompt("Enter distance in kilometr");
+    const distance = +prompt('Enter distance in kilometr');
     console.log(
-      `Fuel amount: ${((distance / 100) * this.averageFuelConsumption).toFixed(
-        2
-      )} and time amount ${(
+      `Fuel amount: ${((distance / 100) * this.averageFuelConsumption).toFixed(2)} and time amount ${(
         distance / this.averageSpeed +
         Math.floor(distance / this.averageSpeed / 4)
       ).toFixed(1)}h`
@@ -53,14 +51,14 @@ const time = {
   // Time now
   timeNow: function () {
     for (let key in this) {
-      if (key !== "timeNow" && key !== "addSeconds" && key !== "addMinutes") {
+      if (key !== 'timeNow' && key !== 'addSeconds' && key !== 'addMinutes') {
         console.log(`${key} - ${this[key]}`);
       }
     }
   },
   // Add seconds
   addSeconds: function () {
-    const seconds = +prompt("How many seconds to add ?");
+    const seconds = +prompt('How many seconds to add ?');
     this.seconds += seconds;
     if (this.seconds > 60) {
       let minutes = Math.floor(this.seconds / 60);
@@ -70,7 +68,7 @@ const time = {
   },
   // Add Minutes
   addMinutes: function () {
-    const minutes = +prompt("How many minutes to add ?");
+    const minutes = +prompt('How many minutes to add ?');
     this.minutes += minutes;
     if (this.minutes > 60) {
       let hour = Math.floor(this.minutes / 60);
@@ -85,3 +83,4 @@ const time = {
     }
   },
 };
+

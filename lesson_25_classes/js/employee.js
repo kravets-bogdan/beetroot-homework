@@ -21,10 +21,22 @@ class EmpTable {
   }
   getHtml() {
     for (const element of this.empList) {
+      console.log('element: ', element);
       const tr = document.createElement('tr');
+      // const tdName = document.createElement('td');
+      // const tdPosition = document.createElement('td');
+      // const tdAge = document.createElement('td');
+
+      // tdName
+      Object.keys(element).forEach((k) => {
+        const td = document.createElement('td');
+        td.innerText = element[k];
+        tr.appendChild(td);
+      });
+
       table.appendChild(tr);
       // ! innerHTML !!!
-      tr.innerHTML = `<td>${element.name}</td><td>${element.position}</td><td>${element.age}</td>`;
+      // tr.innerHTML = `<td>${element.name}</td><td>${element.position}</td><td>${element.age}</td>`;
     }
   }
 }
