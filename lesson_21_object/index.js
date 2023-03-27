@@ -17,7 +17,7 @@ const car = {
       }
     }
   },
-  addDriver()
+
   // Add Driver
   addDriver: function () {
     // test
@@ -84,3 +84,22 @@ const time = {
   },
 };
 
+let a = 5;
+let b = 7;
+console.log('b: ', b);
+console.log('a: ', a);
+
+[a, b] = [b, a];
+
+console.log('b: ', b);
+console.log('a: ', a);
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log('num: ', num);
+let cloneNum = [];
+
+for (let i = num.length - 1; i >= 0; i--) {
+  cloneNum.push(num[i]);
+}
+
+console.log('cloneNum: ', cloneNum);

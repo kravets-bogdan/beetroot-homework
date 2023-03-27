@@ -1,37 +1,37 @@
 // Products list
 const productsList = [
   {
-    name: "Apple",
+    name: 'Apple',
     price: 5,
     count: 2,
     bought: true,
   },
   {
-    name: "Bananas",
+    name: 'Bananas',
     price: 7,
     count: 10,
     bought: false,
   },
   {
-    name: "Orange",
+    name: 'Orange',
     price: 7,
     count: 1,
     bought: true,
   },
   {
-    name: "Orange1",
+    name: 'Orange1',
     price: 7,
     count: 1,
     bought: true,
   },
   {
-    name: "Orange2",
+    name: 'Orange2',
     price: 7,
     count: 1,
     bought: true,
   },
   {
-    name: "Orange3",
+    name: 'Orange3',
     price: 7,
     count: 1,
     bought: true,
@@ -40,10 +40,10 @@ const productsList = [
 // * Add new product
 const newProduct = () => {
   productsList.push({
-    name: prompt("Enter name of product"),
-    price: +prompt("Enter price of product"),
-    count: +prompt("Enter amount of product"),
-    bought: confirm("You already bought this?"),
+    name: prompt('Enter name of product'),
+    price: +prompt('Enter price of product'),
+    count: +prompt('Enter amount of product'),
+    bought: confirm('You already bought this?'),
   });
 };
 
@@ -79,3 +79,16 @@ const addProduct = (name) => {
     }
   });
 };
+
+const arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < arrNumber.length; i++) {}
+console.log('arrNumber.length: ', arrNumber.length);
+// console.log('arrNumber[i]: ', arrNumber[i]);
+for (let i = arrNumber.length - 1; i >= 0; i--) {
+  arrNumber[i];
+  console.log('arrNumber[i]: ', arrNumber[i]);
+}
+
+null == undefined
+console.log('null == undefined: ', null === undefined);

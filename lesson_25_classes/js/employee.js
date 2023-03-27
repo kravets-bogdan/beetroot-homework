@@ -39,7 +39,19 @@ class EmpTable {
       // tr.innerHTML = `<td>${element.name}</td><td>${element.position}</td><td>${element.age}</td>`;
     }
   }
+
+  arrowFun = () => {
+    this.empList;
+  };
 }
+
+arrowFun = () => {
+  this.empList;
+};
+
+const fun = function gethtml() {
+  this.empList;
+};
 const empList = new EmpTable([employee, employee1, employee2]);
 empList.getHtml();
 

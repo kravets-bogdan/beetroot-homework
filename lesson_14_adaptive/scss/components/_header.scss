@@ -23,7 +23,7 @@
   }
   &__navigation {
     transition: $t-normal;
-    @include media("<=tablet") {
+    @include media('<=lg') {
       opacity: 0;
       pointer-events: none;
     }
@@ -39,7 +39,7 @@
   &__burger {
     display: none;
     margin-left: 35px;
-    @include media("<=tablet") {
+    @include media('<=lg') {
       display: block;
     }
   }

@@ -1,6 +1,6 @@
 .latest-photos {
   margin-bottom: 85px;
-  @include media("<=small") {
+  @include media('<=small') {
     margin-bottom: 20px;
   }
 }
